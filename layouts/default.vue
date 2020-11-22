@@ -1,8 +1,10 @@
 <template>
-  <div class="container">
+  <div class="layout-wrapper">
     <Header />
+    <Nav />
     <ColorModePicker />
     <nuxt />
+    <Footer />
   </div>
 </template>
 

@@ -10,12 +10,15 @@ const dynamicContentPath = 'assets/content' // ? No prepending/appending backsla
 const dynamicRoutes = getDynamicPaths(
   {
     blog: 'blog/*.json',
-    projects: 'projects/*.json'
+    portfolio: 'portfolio/*.json'
   },
   dynamicContentPath
 )
 
 export default {
+  // https://github.com/nuxt/components
+  components: true,
+
   mode: 'universal',
   // ? The env Property: https://nuxtjs.org/api/configuration-env/
   env: {
@@ -42,7 +45,7 @@ export default {
     link: [
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,400;0,700;1,400&display=swap'
+        href: 'https://fonts.googleapis.com/css2?family=Karla&family=Rubik:wght@400;700;900&display=swap'
       }
     ] // ? Imports the font 'Karla' and is optimized by the netlify plugin 'Subfont'
   },
@@ -87,7 +90,7 @@ export default {
         'postcss-preset-env': postcssPresetEnv({
           stage: 1,
           features: {
-            'nesting-rules': false
+            // 'nesting-rules': false
           }
         })
       }
@@ -139,13 +142,13 @@ export default {
  * @param {*} urlFilepathTable - example below
  * {
  *   blog: 'blog/*.json',
- *   projects: 'projects/*.json'
+ *   portfolio: 'portfolio/*.json'
  * }
  *
  * @return {Array} - Will return those files into urls for SSR generated .html's like
  * [
  *   /blog/2019-08-27-incidunt-laborum-e ,
- *   /projects/story-test-story-1
+ *   /portfolio/story-test-story-1
  * ]
  */
 function getDynamicPaths(urlFilepathTable, cwdPath) {

@@ -16,7 +16,7 @@ export const mutations = {
 
 export const actions = {
   getPosts(files) {
-    return files.keys().map((key) => {
+    return files.keys().map(key => {
       let res = files(key)
       res.slug = key.slice(2, -5)
       return res
@@ -28,7 +28,7 @@ export const actions = {
     await commit(SET_BLOG_POSTS, actions.getPosts(blogFiles))
 
     // Project collection type
-    let projectFiles = await require.context('~/assets/content/projects/', false, /\.json$/)
+    let projectFiles = await require.context('~/assets/content/portfolio/', false, /\.json$/)
     await commit(SET_PROJECT_POSTS, actions.getPosts(projectFiles))
 
     // ? When adding/changing NetlifyCMS collection types, make sure to:

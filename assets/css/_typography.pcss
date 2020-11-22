@@ -1,3 +1,55 @@
+.rubik {
+  font-family: var(--font-family-headings);
+}
+
+.karla {
+  font-family: var(--font-family-body);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-family-headings);
+  font-weight: 700;
+}
+
+h1 {
+  @apply tracking-tightest;
+}
+
+.main-heading {
+  @apply text-5xl font-bold tracking-tighter relative rubik;
+}
+
+.alternative-heading {
+  @apply tracking-widest font-light uppercase text-sm;
+  @apply text-gray-400;
+  letter-spacing: 0.35rem;
+}
+
+.alternative-heading--has-left-line {
+  position: relative;
+  &:before {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 0.25rem;
+    height: 1rem;
+    top: 50%;
+    transform: translate3d(0, -50%, 0);
+    left: -1.5rem;
+    background-color: var(--color-primary);
+  }
+}
+
+p,
+li {
+  font-family: 'Karla', sans-serif;
+}
+
 a {
   color: var(--text-secondary);
   @apply font-bold transition-colors duration-200 ease-in-out;
@@ -19,4 +71,8 @@ a {
     color: var(--color-primary-600);
     @apply block font-bold text-5xl tracking-wide transition-colors duration-200 ease-in-out;
   }
+}
+
+.light-mode .alternative-heading {
+  @apply text-gray-700;
 }

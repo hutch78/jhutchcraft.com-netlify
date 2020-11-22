@@ -53,7 +53,7 @@ collections:
     # identifier_field: name
     label: 'Projects'
     label_singular: 'Project'
-    folder: 'assets/content/projects'
+    folder: 'assets/content/portfolio'
     create: true
     format: 'json'
     slug: '{{project_type}}-{{slug}}'

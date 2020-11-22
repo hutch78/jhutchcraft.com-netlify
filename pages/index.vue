@@ -1,8 +1,54 @@
 <template>
-  <div class="main text-center flex flex-col items-center justify-center">
-    <!-- <logo /> -->
-    <h1 class="title">Nuxt — Tailwind — Netlify CMS</h1>
-    <h2 class="subtitle">Boilerplate</h2>
+  <div class="main">
+    <section class="hero-section py-10">
+      <div class="container">
+        <h1 class="main-heading mb-8 max-w-5xl">
+          Hi there. I am a Front End Developer, Designer, Husband and Father from Ocala, FL
+        </h1>
+        <p class="text-xl">I bring ideas to life using design, HTML, CSS and Javascript</p>
+      </div>
+    </section>
+
+    <section class="featured-project mt-24">
+      <div class="container">
+        <div class="lg:flex">
+          <div class="pt-4 lg:pt-10 lg:max-w-md lg:pr-20">
+            <h3 class="alternative-heading alternative-heading--has-left-line">Featured Project</h3>
+            <div class="mt-10">
+              <h4 class="text-xl font-bold mb-4">Renters Warehouse</h4>
+              <p class="leading-relaxed mb-10">
+                I currently lead front end development and design on this small team. This brand and company are very
+                important to me and I take a lot of pride in the work I have done for them!
+              </p>
+              <div class="flex">
+                <a
+                  href="https://renterswarehouse.com"
+                  class="block rounded bg-primary border border-solid border-primary px-10 py-3 text-white mr-2"
+                  target="_blank"
+                  >Visit Website</a
+                >
+                <nuxt-link
+                  to="/portfolio/renters-warehouse"
+                  class="block rounded border border-solid border-gray-400 px-10 py-3 text-gray-800"
+                  target="_blank"
+                  >Read More</nuxt-link
+                >
+              </div>
+            </div>
+          </div>
+          <!-- end copntent column -->
+          <div>
+            <nuxt-link to="/portfolio/renters-warehouse">
+              <img
+                src="/img/thumbs/thumb-rw.png"
+                alt="A thumbnail showing the RentersWarehouse.com website"
+                class="block max-w-full"
+              />
+            </nuxt-link>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
@@ -20,3 +66,11 @@ export default {
   }
 }
 </script>
+
+<style lang="postcss" scoped>
+.main-heading {
+  @media (min-width: theme('screens.lg')) {
+    left: -4rem;
+  }
+}
+</style>

@@ -3,5 +3,6 @@
   "project_type": "story",
   "title": "Story test",
   "description": "Short descriptive text",
+  "featuredImage": "https://umsplash.it/900/600",
   "body": "Longer **markdown**-*enabled* content text."
 }
