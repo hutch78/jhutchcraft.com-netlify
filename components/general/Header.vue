@@ -10,11 +10,11 @@
 
       <nav class="main-nav">
         <ul class="flex">
-          <li class="">
-            <nuxt-link class="block px-4 py-2 tracking-wide" to="/portfolio">Portfolio</nuxt-link>
+          <li class="main-nav-item">
+            <nuxt-link class="main-nav-link" to="/portfolio">Portfolio</nuxt-link>
           </li>
-          <li class="">
-            <a class="block px-4 py-2 tracking-wide" href="mailto:hutch78@me.com">Contact</a>
+          <li class="main-nav-item">
+            <a class="main-nav-link" href="mailto:hutch78@me.com">Contact</a>
           </li>
         </ul>
       </nav>
@@ -30,18 +30,36 @@ export default {
 
 <style lang="postcss" scoped>
 .main-nav {
-  .nuxt-link-exact-active {
-    @apply text-accent-100;
-    &:hover {
-      /* @apply ; */
+}
+
+.main-nav-item {
+  @apply mx-4;
+}
+
+.main-nav-link {
+  @apply block py-2 tracking-wide relative;
+  &:after {
+    content: '';
+    @apply h-1 w-0 absolute block left-0 bottom-0 bg-accent transition-all duration-500;
+  }
+
+  &:hover {
+    @apply text-accent;
+    &:after {
+      @apply w-4;
     }
   }
-  .light-mode {
-    & .nuxt-link-exact-active {
-      @apply text-accent-600;
-      &:hover {
-        @apply text-white;
-      }
+  &.nuxt-link-active {
+    &:after {
+      width: 1rem;
+    }
+    &:hover {
+      @apply text-primary-800;
+    }
+  }
+
+  .light-mode & {
+    &:hover {
     }
   }
 }

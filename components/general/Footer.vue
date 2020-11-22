@@ -1,5 +1,5 @@
 <template>
-  <footer class="pt-24 pb-20">
+  <footer class="pt-34 pb-20">
     <div class="container text-center">
       <h2 class="mb-8 max-w-3xl text-4xl font-bold mx-auto tracking-tighter">
         Looking for a developer or designer to bring your next idea to life?
