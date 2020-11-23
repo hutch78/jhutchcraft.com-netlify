@@ -21,7 +21,10 @@ h1 {
 }
 
 .main-heading {
-  @apply text-5xl font-bold tracking-tighter relative rubik;
+  @apply text-3xl font-bold tracking-tighter relative rubik;
+  @media (min-width: theme('screens.lg')) {
+    @apply text-5xl;
+  }
 }
 
 .alternative-heading {

@@ -1,11 +1,11 @@
 <template>
   <div class="main">
-    <section class="hero-section pt-10 pb-0 text-center">
+    <section class="hero-section pt-10 pb-0 md:text-center">
       <div class="container">
         <h1 class="main-heading mb-0">
           Let's Chat
         </h1>
-        <div class="flex text-left justify-center mx-auto mb-12 max-w-lg">
+        <div class="flex flex-col md:flex-row text-left pl-4 justify-center mx-auto mb-12 max-w-lg">
           <div class="flex items-center mt-8 text-gray-600 dark:text-gray-400">
             <svg
               fill="none"
@@ -55,7 +55,7 @@
 
     <section class="mt-24">
       <div class="container">
-        <p class="text-2xl font-bold dark:text-gray-400 mb-8 text-center tracking-tight">
+        <p class="text-xl md:text-2xl font-bold dark:text-gray-400 mb-8 md:text-center tracking-tight leading-relaxed">
           Fill in the form to start a conversation
         </p>
         <form netlify action="/thank-you" class="flex flex-col justify-center  max-w-lg mx-auto" name="contactForm">
@@ -68,7 +68,7 @@
               name="name"
               id="name"
               placeholder="Full Name"
-              class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+              class="w-100 mt-2 py-4 px-4 rounded bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 focus:border-indigo-500 focus:outline-none"
             />
           </div>
 
@@ -79,7 +79,7 @@
               name="email"
               id="email"
               placeholder="Email"
-              class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+              class="w-100 mt-2 py-4 px-4 rounded bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 focus:border-indigo-500 focus:outline-none"
             />
           </div>
 
@@ -90,7 +90,7 @@
               name="tel"
               id="tel"
               placeholder="Telephone Number"
-              class="w-100 mt-2 py-3 px-3 rounded-lg bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 font-semibold focus:border-indigo-500 focus:outline-none"
+              class="w-100 mt-2 py-4 px-4 rounded bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 focus:border-indigo-500 focus:outline-none"
             />
           </div>
 

@@ -22,7 +22,7 @@
         </p>
         <img src="/img/full/roro.jpg" alt="high res image of the new RORO website" class="block max-w-full mb-16 " />
         <div class="text-center mb-16 xl:mb-20">
-          <p class="text-2xl mb-6">
+          <p class="text-2xl mb-6 leading-relaxed">
             This site is still in development. Check back soon to see the fully built live site.
           </p>
           <a
@@ -49,14 +49,14 @@
     <nav class="portfolio-nav mt-20">
       <div class="container flex justify-between">
         <nuxt-link to="/portfolio/happily-ever-hutchcraft" class="text-left">
-          <span class="block rubik font-bold text-xl mb-2">#HappilyEverHutchcraft</span>
+          <span class="block rubik font-bold text-md lg:text-xl mb-2">#HappilyEverHutchcraft</span>
           <span class="block text-gray-600">&laquo; View Project</span>
         </nuxt-link>
-        <nuxt-link to="/portfolio" class="text-right">
-          <span class="block rubik font-normal text-xl mb-2">&laquo; Back to Portfolio</span>
+        <nuxt-link to="/portfolio" class="text-right hidden md:inline-block">
+          <span class="block rubik font-normal text-xl mb-2">Back to Portfolio</span>
         </nuxt-link>
         <nuxt-link to="/portfolio/renters-warehouse" class="text-right">
-          <span class="block rubik font-bold text-xl mb-2">Renters Warehouse</span>
+          <span class="block rubik font-bold text-md lg:text-xl mb-2">Renters Warehouse</span>
           <span class="block text-gray-600">View Project &raquo;</span>
         </nuxt-link>
       </div>

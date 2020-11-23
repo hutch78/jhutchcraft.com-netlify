@@ -1,5 +1,11 @@
 .container {
-  @apply my-0 mx-auto max-w-5xl;
+  @apply my-0 mx-auto max-w-5xl px-8;
+  @media (min-width: theme('screens.md')) {
+    @apply px-16;
+  }
+  @media (min-width: theme('screens.lg')) {
+    @apply px-0;
+  }
 }
 
 .articles {

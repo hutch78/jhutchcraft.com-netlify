@@ -5,7 +5,7 @@
         <h1 class="main-heading mb-8 max-w-5xl">
           Hi there. I am a Front End Developer, Designer, Husband and Father from Ocala, FL
         </h1>
-        <p class="text-xl">I bring ideas to life using design, HTML, CSS and Javascript</p>
+        <p class="text-xl leading-relaxed">I bring ideas to life using design, HTML, CSS and Javascript</p>
       </div>
     </section>
 
@@ -20,16 +20,16 @@
                 I currently lead front end development and design on this small team. This brand and company are very
                 important to me and I take a lot of pride in the work I have done for them!
               </p>
-              <div class="flex">
+              <div class="md:flex mb-16 lg:mb-0">
                 <a
                   href="https://renterswarehouse.com"
-                  class="block rounded bg-primary border border-solid border-primary px-10 py-3 text-white mr-2"
+                  class="block rounded bg-primary border border-solid border-primary md:px-10 py-3 text-white md:mr-2 whitespace-no-wrap text-center mb-3 md:mb-0"
                   target="_blank"
                   >Visit Website</a
                 >
                 <nuxt-link
                   to="/portfolio/renters-warehouse"
-                  class="block rounded border border-solid border-gray-400 px-10 py-3 text-gray-800"
+                  class="block rounded border border-solid border-gray-400 md:px-10 py-3 text-gray-800 dark:text-gray-300 dark:border-primary-400 whitespace-no-wrap text-center"
                   target="_blank"
                   >Read More</nuxt-link
                 >

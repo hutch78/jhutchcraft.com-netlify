@@ -31,14 +31,14 @@
     <nav class="portfolio-nav mt-20">
       <div class="container flex justify-between items-center">
         <nuxt-link to="/portfolio/roro" class="text-left">
-          <span class="block rubik font-bold text-xl mb-2">RORO</span>
+          <span class="block rubik font-bold text-md lg:text-xl mb-2">RORO</span>
           <span class="block text-gray-600">&laquo; View Project</span>
         </nuxt-link>
-        <nuxt-link to="/portfolio" class="text-right">
-          <span class="block rubik font-normal text-xl mb-2">&laquo; Back to Portfolio</span>
+        <nuxt-link to="/portfolio" class="hidden md:inline-block text-right">
+          <span class="block rubik font-normal text-xl mb-2">Back to Portfolio</span>
         </nuxt-link>
         <nuxt-link to="/portfolio/happily-ever-hutchcraft" class="text-right">
-          <span class="block rubik font-bold text-xl mb-2">#HappilyEverHutchcraft</span>
+          <span class="block rubik font-bold text-md lg:text-xl mb-2">#HappilyEverHutchcraft</span>
           <span class="block text-gray-600">View Project &raquo;</span>
         </nuxt-link>
       </div>
