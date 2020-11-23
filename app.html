@@ -4,7 +4,7 @@
     {{ HEAD }}
   </head>
   <body {{ BODY_ATTRS }}>
-    <form netlify method="post" class="hidden" action="/thank-you" name="contactForm" hidden>
+    <form data-netlify="true" method="post" class="hidden" action="/thank-you" name="contactForm" hidden>
       <input type="hidden" name="form-name" value="contactForm" />
       <input type="text" name="name" />
       <input type="text" name="email" />
