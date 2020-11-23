@@ -58,51 +58,49 @@
         <p class="text-xl md:text-2xl font-bold dark:text-gray-400 mb-8 md:text-center tracking-tight leading-relaxed">
           Fill in the form to start a conversation
         </p>
-        <client-only>
-          <form netlify action="/thank-you" class="flex flex-col justify-center  max-w-lg mx-auto" name="contactForm">
-            <input type="hidden" name="form-name" value="contactForm" />
+        <form netlify action="/thank-you" class="flex flex-col justify-center  max-w-lg mx-auto" name="contactForm">
+          <input type="hidden" name="form-name" value="contactForm" />
 
-            <div class="flex flex-col">
-              <label for="name" class="hidden">Full Name</label>
-              <input
-                type="name"
-                name="name"
-                id="name"
-                placeholder="Full Name"
-                class="w-100 mt-2 py-4 px-4 rounded bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 focus:border-indigo-500 focus:outline-none"
-              />
-            </div>
+          <div class="flex flex-col">
+            <label for="name" class="hidden">Full Name</label>
+            <input
+              type="name"
+              name="name"
+              id="name"
+              placeholder="Full Name"
+              class="w-100 mt-2 py-4 px-4 rounded bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 focus:border-indigo-500 focus:outline-none"
+            />
+          </div>
 
-            <div class="flex flex-col mt-2">
-              <label for="email" class="hidden">Email</label>
-              <input
-                type="email"
-                name="email"
-                id="email"
-                placeholder="Email"
-                class="w-100 mt-2 py-4 px-4 rounded bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 focus:border-indigo-500 focus:outline-none"
-              />
-            </div>
+          <div class="flex flex-col mt-2">
+            <label for="email" class="hidden">Email</label>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="Email"
+              class="w-100 mt-2 py-4 px-4 rounded bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 focus:border-indigo-500 focus:outline-none"
+            />
+          </div>
 
-            <div class="flex flex-col mt-2 mb-8">
-              <label for="tel" class="hidden">Number</label>
-              <input
-                type="tel"
-                name="tel"
-                id="tel"
-                placeholder="Telephone Number"
-                class="w-100 mt-2 py-4 px-4 rounded bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 focus:border-indigo-500 focus:outline-none"
-              />
-            </div>
+          <div class="flex flex-col mt-2 mb-8">
+            <label for="tel" class="hidden">Number</label>
+            <input
+              type="tel"
+              name="tel"
+              id="tel"
+              placeholder="Telephone Number"
+              class="w-100 mt-2 py-4 px-4 rounded bg-white dark:bg-gray-800 border border-gray-400 dark:border-gray-700 text-gray-800 focus:border-indigo-500 focus:outline-none"
+            />
+          </div>
 
-            <button
-              type="submit"
-              class="inline-block rounded bg-primary border border-solid border-primary px-10 py-5 text-white text-lg"
-            >
-              Submit
-            </button>
-          </form>
-        </client-only>
+          <button
+            type="submit"
+            class="inline-block rounded bg-primary border border-solid border-primary px-10 py-5 text-white text-lg"
+          >
+            Submit
+          </button>
+        </form>
       </div>
     </section>
   </div>
