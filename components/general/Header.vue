@@ -14,7 +14,7 @@
             <nuxt-link class="main-nav-link" to="/portfolio">Portfolio</nuxt-link>
           </li>
           <li class="main-nav-item">
-            <a class="main-nav-link" href="mailto:hutch78@me.com">Contact</a>
+            <nuxt-link class="main-nav-link" to="/contact">Contact</nuxt-link>
           </li>
         </ul>
       </nav>

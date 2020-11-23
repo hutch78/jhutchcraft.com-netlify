@@ -25,23 +25,22 @@ h1 {
 }
 
 .alternative-heading {
-  @apply tracking-widest font-light uppercase text-sm;
-  @apply text-gray-400;
+  @apply tracking-widest font-light uppercase text-sm text-gray-100;
   letter-spacing: 0.35rem;
-}
 
-.alternative-heading--has-left-line {
-  position: relative;
-  &:before {
-    content: '';
-    display: block;
-    position: absolute;
-    width: 0.25rem;
-    height: 1rem;
-    top: 50%;
-    transform: translate3d(0, -50%, 0);
-    left: -1.5rem;
-    background-color: var(--color-primary);
+  &.alternative-heading--has-left-line {
+    position: relative;
+    &:before {
+      content: '';
+      display: block;
+      position: absolute;
+      width: 0.25rem;
+      height: 1rem;
+      top: 50%;
+      transform: translate3d(0, -50%, 0);
+      left: -1.5rem;
+      background-color: var(--color-primary);
+    }
   }
 }
 
@@ -67,12 +66,12 @@ a {
 }
 
 .light-mode {
-  .title {
+  & .title {
     color: var(--color-primary-600);
     @apply block font-bold text-5xl tracking-wide transition-colors duration-200 ease-in-out;
   }
-}
 
-.light-mode .alternative-heading {
-  @apply text-gray-700;
+  & .alternative-heading {
+    @apply text-gray-800;
+  }
 }
