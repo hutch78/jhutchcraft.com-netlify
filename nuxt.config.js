@@ -19,7 +19,6 @@ export default {
   // https://github.com/nuxt/components
   components: true,
 
-  mode: 'universal',
   // ? The env Property: https://nuxtjs.org/api/configuration-env/
   env: {
     url:
