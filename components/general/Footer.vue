@@ -37,6 +37,6 @@ export default {
 
 <style lang="postcss" scoped>
 footer {
-  border-bottom: 1rem solid var(--color-primary);
+  border-bottom: 1rem solid var(--color-accent);
 }
 </style>

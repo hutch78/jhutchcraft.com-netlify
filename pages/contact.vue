@@ -59,7 +59,7 @@
           Fill in the form to start a conversation
         </p>
         <form netlify action="/thank-you" class="flex flex-col justify-center  max-w-lg mx-auto" name="contactForm">
-          <input type="hidden" name="form_name" value="contactForm" />
+          <input type="hidden" name="form-name" value="contactForm" />
 
           <div class="flex flex-col">
             <label for="name" class="hidden">Full Name</label>
